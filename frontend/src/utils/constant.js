@@ -1,4 +1,4 @@
-export const API_END_POINT = "https://fasal-task-blond.vercel.app/api/v1/user";
+export const API_END_POINT = "http://localhost:8080/api/v1/user";
 export const options = {
     method: 'GET',
     headers: {
