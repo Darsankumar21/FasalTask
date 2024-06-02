@@ -5,7 +5,6 @@ import databaseConnection from "./utils/database.js";
 import cookieParser from "cookie-parser";
 import userRoute from "./routes/userRoute.js";
 import cors from "cors";
-PORT=8080;
 databaseConnection();
 
 dotenv.config({
@@ -29,6 +28,6 @@ app.get("/",(req,res) =>{
 })
 app.use("/api/v1/user", userRoute);
 
-app.listen(PORT,() => {
-    console.log(`Server listen at port ${PORT}`);
+app.listen(process.env.PORT,() => {
+    console.log(`Server listen at port ${process.env.PORT}`);
 });
