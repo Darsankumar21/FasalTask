@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin: ["https://fasal-task-iwzq-evj4ymduz-darsankumars-projects.vercel.app"],
+    origin: ["https://fasal-task-iwzq.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }
