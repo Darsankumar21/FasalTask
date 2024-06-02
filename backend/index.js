@@ -24,6 +24,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
  
 // api
+app.get("/",(req,res) =>{
+  res.json("Hello")
+})
 app.use("/api/v1/user", userRoute);
 
 app.listen(process.env.PORT,() => {
